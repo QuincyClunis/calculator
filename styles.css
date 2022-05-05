@@ -1,7 +1,43 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+}
+
 .container {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    min-height: 50vh;
+    grid-template-columns: repeat(4, 100px);
+    grid-template-rows: minmax(120px, auto) repeat(5, 100px);
+
+}
+
+.display {
+    grid-column: 1 / -1;
+    background-color: navajowhite;
     display: flex;
-    position: absolute;
-    top: 50%;
-    right: 50%;
-    border: black solid;
+    align-items: flex-end;
+    justify-content: space-around;
+    flex-direction: column;
+    padding: 10px;
+}
+
+.numberBtn {
+    cursor: pointer;
+    font-size: 2rem;
+    border: 1px solid black;
+    outline: none;
+    background-color: #49a6e9;
+}
+.actionBtn {
+    cursor: pointer;
+    font-size: 2rem;
+    border: 1px solid black;
+    outline: none;
+    background-color: green;
 }
