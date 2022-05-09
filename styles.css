@@ -31,11 +31,6 @@ button {
 
 .operationBtn {
     background-color: green;
-    color: #521751;
-}
-
-.data-number {
-    background-color: #49a6e9;
 }
 
 .calculator-grid > button:hover {
