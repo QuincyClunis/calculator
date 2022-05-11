@@ -9,29 +9,31 @@
     <script src="main.js" defer></script>
 </head>
 <body>
-    <div class="calculator-grid">
-        <div class="output">
-            <div data-previous-operand class="previous-operand"></div>
-            <div data-current-operand class="current-operand"></div>
-        </div>
-        <button data-all-clear class="span-two">AC</button>
-        <button data-delete class="span-two">DEL</button>
-        <button data-operation class="operationBtn">÷</button>
-        <button data-number>1</button>
-        <button data-number>2</button>
-        <button data-number>3</button>
-        <button data-operation class="operationBtn">*</button>
-        <button data-number>4</button>
-        <button data-number>5</button>
-        <button data-number>6</button>
-        <button data-operation class="operationBtn">+</button>
-        <button data-number>7</button>
-        <button data-number>8</button>
-        <button data-number>9</button>
-        <button data-operation class="operationBtn">-</button>
-        <button data-number>.</button>
-        <button data-number>0</button>
-        <button data-equals class="operationBtn">=</button>
-    </div>
+    <section class="calculator-container">
+        <section class="output">
+            <div class="display">420</div>
+        </section>
+        <section class="numbers">
+            <button>1</button>
+            <button>2</button>
+            <button>3</button>
+            <button>4</button>
+            <button>5</button>
+            <button>6</button>
+            <button>7</button>
+            <button>8</button>
+            <button>9</button>
+            <button>0</button>
+            <button>.</button>
+            <button>C</button>
+        </section>
+        <section class="operations">
+            <button>/</button>
+            <button>*</button>
+            <button>+</button>
+            <button>-</button>
+        </section>
+        <button id="equals">=</button>
+    </section>
 </body>
 </html>
